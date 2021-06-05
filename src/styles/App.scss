@@ -1,0 +1,16 @@
+@import "./breakpoints.scss";
+@import "./components/Slider.scss";
+@import "./components/Nav.scss";
+@import "./components/NavOptions.scss";
+@import "./pages/Home.scss";
+@import "./variables.scss";
+
+.app {
+  width: 100%;
+  height: 100vh;
+  .container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
