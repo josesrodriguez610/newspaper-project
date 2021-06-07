@@ -11,3 +11,6 @@ export const navOptions = [
   "games",
   "store",
 ];
+
+export const stringCut = (string) =>
+  string !== null ? string.replace(/\[(.*?)\]/i, "") : null;

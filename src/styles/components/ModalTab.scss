@@ -44,6 +44,9 @@
     color: white;
     font-size: 2.5rem;
     cursor: pointer;
+    transition-timing-function: ease-in-out;
+    transition-duration: 200ms;
+    transition-delay: 100ms;
     &:hover {
       font-size: 2.6rem;
     }
@@ -51,6 +54,9 @@
 
   .modal-login {
     cursor: pointer;
+    transition-timing-function: ease-in-out;
+    transition-duration: 200ms;
+    transition-delay: 100ms;
     &:hover {
       text-decoration: underline;
     }
