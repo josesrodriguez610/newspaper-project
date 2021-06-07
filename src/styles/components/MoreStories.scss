@@ -1,0 +1,17 @@
+.moreStories {
+  padding-left: 20px;
+  h3 {
+    padding-bottom: 20px;
+    cursor: default;
+  }
+  ul {
+    padding-left: 20px;
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
+    li {
+      padding-bottom: 30px;
+    }
+  }
+}

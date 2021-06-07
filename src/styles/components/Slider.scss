@@ -4,6 +4,7 @@
   .slider-container {
     height: 540px;
     width: 100%;
+    border: 1px solid;
     .slider-image {
       width: 100%;
       height: 100%;
@@ -33,17 +34,25 @@
     }
 
     .slider-info-container {
+      overflow-wrap: break-word;
       color: white;
-      width: 100%;
+      width: 97%;
       height: 4rem;
       background-color: rgba(0, 0, 0, 0.5);
       padding: 20px;
       position: relative;
       bottom: 12rem;
+      transition-timing-function: ease-in-out;
+      transition-duration: 200ms;
+      transition-delay: 100ms;
+      cursor: pointer;
 
       h3 {
         width: 100%;
         padding-bottom: 10px;
+        &:hover {
+          text-decoration: underline 2px;
+        }
       }
       .slider-info-separation {
         font-weight: 900;

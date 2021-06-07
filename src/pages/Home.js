@@ -1,3 +1,5 @@
+import Articles from "../components/Articles";
+import MoreStories from "../components/MoreStories";
 import Slider from "../components/Slider";
 
 const Home = ({ stateNews }) => {
@@ -6,9 +8,10 @@ const Home = ({ stateNews }) => {
       <div className="home-container">
         <div className="left">
           <Slider stateNews={stateNews} />
+          <Articles stateNews={stateNews} />
         </div>
         <div className="right">
-          <h1>Hi</h1>
+          <MoreStories stateNews={stateNews} />
         </div>
       </div>
     </div>

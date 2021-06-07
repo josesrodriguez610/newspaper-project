@@ -8,7 +8,7 @@ import moment from "moment";
 const Slider = ({ stateNews }) => {
   const [page, setPage] = useState(0);
 
-  const imageIndex = wrap(0, stateNews.articles.length, page);
+  const imageIndex = wrap(0, 10, page);
   const paginate = (newDirection) => {
     setPage(page + newDirection);
   };
@@ -21,7 +21,11 @@ const Slider = ({ stateNews }) => {
           <AnimatePresence initial={false}>
             <motion.img
               key={page}
-              src={stateNews?.articles[imageIndex]?.urlToImage}
+              src={
+                stateNews?.articles[imageIndex]?.urlToImage === null
+                  ? "https://cdn1.vectorstock.com/i/thumb-large/50/20/no-photo-or-blank-image-icon-loading-images-or-vector-37375020.jpg"
+                  : stateNews?.articles[imageIndex]?.urlToImage
+              }
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}

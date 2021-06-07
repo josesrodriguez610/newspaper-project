@@ -1,0 +1,66 @@
+.MuiDialog-paperWidthSm {
+  min-width: 50% !important;
+  min-height: 60% !important;
+  position: absolute;
+}
+
+.modal-title {
+  text-align: center;
+}
+
+.modal-container-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1,
+  h3,
+  span {
+    // padding: 10px;
+  }
+
+  h1 {
+    color: #0275d8;
+  }
+
+  h3 {
+    color: black;
+    font-size: 2rem;
+  }
+
+  span {
+    font-style: italic;
+    color: black;
+    font-weight: 600;
+  }
+
+  button {
+    padding: 16px;
+    margin: 10px;
+    width: 90%;
+    border-radius: 10px;
+    background-color: #0275d8;
+    color: white;
+    font-size: 2.5rem;
+    cursor: pointer;
+    &:hover {
+      font-size: 2.6rem;
+    }
+  }
+
+  .modal-login {
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.modal-exit {
+  position: relative;
+  left: 94%;
+  padding: 5px;
+  font-size: 30px;
+  cursor: pointer;
+}
