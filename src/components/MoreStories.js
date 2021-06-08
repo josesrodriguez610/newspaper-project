@@ -4,7 +4,11 @@ const MoreStories = ({ stateNews }) => {
       <h3>Top Stories</h3>
       {stateNews.articles.slice(10, 15).map((article) => (
         <ul>
-          <li>{article.title}</li>
+          <li>
+            <a href={article.url} target="_blank">
+              {article.title}
+            </a>
+          </li>
         </ul>
       ))}
     </div>

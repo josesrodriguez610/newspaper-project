@@ -12,8 +12,6 @@ const Slider = ({ stateNews }) => {
   const paginate = (newDirection) => {
     setPage(page + newDirection);
   };
-
-  console.log(stateNews);
   return (
     <div className="slider">
       <div className="slider-container">
@@ -56,19 +54,25 @@ const Slider = ({ stateNews }) => {
           </motion.div>
         </div>
         <div className="slider-info-container">
-          <h3>{stateNews?.articles[imageIndex]?.title}</h3>
-          <span>
-            {stateNews?.articles[imageIndex]?.author === null
-              ? "unknown"
-              : stateNews?.articles[imageIndex]?.author}
-          </span>{" "}
-          <span className="slider-info-separation">| </span>
-          <span>
-            {moment().format(
-              "MMM Do YY",
-              stateNews?.articles[imageIndex]?.publishedAt
-            )}
-          </span>
+          <a
+            className="a-color"
+            href={stateNews?.articles[imageIndex]?.url}
+            target="_blank"
+          >
+            <h3>{stateNews?.articles[imageIndex]?.title}</h3>
+            <span>
+              {stateNews?.articles[imageIndex]?.author === null
+                ? "unknown"
+                : stateNews?.articles[imageIndex]?.author}
+            </span>{" "}
+            <span className="slider-info-separation">| </span>
+            <span>
+              {moment().format(
+                "MMM Do YY",
+                stateNews?.articles[imageIndex]?.publishedAt
+              )}
+            </span>
+          </a>
         </div>
       </div>
     </div>
